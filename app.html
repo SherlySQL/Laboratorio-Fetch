@@ -27,6 +27,11 @@
 <div class="jumbotron">
      <div class="container">
     <h1 class="display-4">Mi Sitio Web</h1>
+
+    <div class="mt-5 bg-info" id="rectangulo" > 
+
+    </div>
+
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo sint autem dolore! Soluta asperiores voluptatum nam consequatur repudiandae cum veritatis, nemo distinctio voluptas accusamus facere sit illum laudantium aspernatur tempore.</p>
     
     
@@ -34,6 +39,10 @@
     <!-- 1.	Utilizar el botón rojo “Leer mas “ al presionar el botón debe llamar un evento “Verinfo” -->
     <p><a href="#" class="btn btn-danger btn-lg btn-inline"  onclick="Verinfo ()">Leer mas </a></p> 
     
+    <div class="mt-5" id="circulo"> 
+        
+    </div>
+
     </div>
 
 </div>
@@ -48,12 +57,12 @@
       <div class="col-md-4">
         <h2>Heading</h2>
         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary" href="#" role="button" onclick="Verinfo ()">View details &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="#" role="button" onclick="Nombre ()">Nombre &raquo;</a></p>
       </div>
       <div class="col-md-4">
         <h2>Heading</h2>
         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="#" role="button" onclick="Foto ()">Imagen &raquo;</a></p>
       </div>
       <div class="col-md-4">
         <h2>Heading</h2>
@@ -65,6 +74,23 @@
     <hr>
 
   </div> <!-- /container -->
+
+
+<!------------------------------------------------TABLA DINAMICA----------------------------------------------------->
+<div class="mt-5 text-center">
+
+    <button class="btn btn-danger" onclick="Tabla()" >Mostrar Tabla</button>
+
+    <table class="table table-striped" id="contenidotabla">
+        <thead>
+             <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+</div>
 
 
 
