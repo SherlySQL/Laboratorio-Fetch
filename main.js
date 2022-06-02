@@ -15,6 +15,6 @@ function Verinfo () {
     
         alert(JSON.stringify(data)) //la data es la promesa que les cumplio el API
     
-    } )
+    })
 }
 
