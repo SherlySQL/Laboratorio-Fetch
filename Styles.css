@@ -1,1 +1,10 @@
 
+#rectangulo{
+    height: 65px;
+}
+
+#circulo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}

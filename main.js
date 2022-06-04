@@ -22,6 +22,7 @@ function Verinfo () {
 
 function Nombre() {
     let url="https://randomuser.me/api/"
+    
     let contenido = document.getElementById("rectangulo")
     let nombre;
     let miinformacion
@@ -35,9 +36,13 @@ function Nombre() {
         <p> Nombre: "${nombre}"</p> 
     `
     contenido.innerHTML=miinformacion //Meter la info en el HTML
+    console.log((JSON.stringify(data)))//la data es la promesa que les cumplio el API
 })
-
 }
+
+
+
+
 
 
 function Foto() {
