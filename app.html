@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="Styles.css">
     <title>www.holamundo.com</title>
 </head>
+
+
 <body>
 
 <nav class="navbar navbar-expand-md fixed-top bg-dark ">
-
-
     <ul class="nav ">
         <li class="nav-item"><a class="nav-link" href="app.html">Inicio</a></li>    
         <li class="nav-item"><a class="nav-link" href="Historico.html">Historia</a></li>
@@ -19,14 +19,17 @@
     </ul>
 </nav>
 
-<main>
 
+
+<main>
 <!--Inicio Main-->
+
+
+<!------------------------------------------------RECTANGULO Y CIRCULO----------------------------------------------------->
 
 <!--Seccion uno-->
     <div class="jumbotron">
         <div class="container">
-          
           <div class="row ">
               <div class="col-sm-4">
                   <h1 class="display-4">Mi Sitio Web</h1> <!--display-4 es el tamaño del Encabezado "Mi Sitio Web"-->
@@ -43,11 +46,9 @@
 
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo sint autem dolore! Soluta asperiores voluptatum nam consequatur repudiandae cum veritatis, nemo distinctio voluptas accusamus facere sit illum laudantium aspernatur tempore.</p>
         
-        
-        <!--*******************************LABORATORIO FETCH*************************************************-->
+      
         <!-- 1.	Utilizar el botón rojo “Leer mas “ al presionar el botón debe llamar un evento “Verinfo” -->
-
-            <div class="row ">
+          <div class="row ">
               <div class="col-sm-4">
                   <p><a href="#" class="btn btn-danger btn-lg btn-inline"  onclick="Verinfo ()">Leer mas </a></p> 
               </div>
@@ -65,7 +66,7 @@
 
 
 
-
+<!------------------------------------------------BOTONES----------------------------------------------------->
 
 <!--Seccion dos-->
 <div class="container">
@@ -90,23 +91,35 @@
 
     <hr>
 
-  </div> <!-- /container -->
+  </div> 
+
+
+
 
 
 <!------------------------------------------------TABLA DINAMICA----------------------------------------------------->
-<div class="mt-5 text-center">
+<div class="mt-5  text-center ">
 
-    <button class="btn btn-danger" onclick="Tabla()" >Mostrar Tabla</button>
+    <button class="btn btn-danger mb-5" onclick="Tabla ()" >Mostrar Tabla</button>
 
-    <table class="table table-striped" id="contenidotabla">
+    <div class="">
+      <table class="table table-striped" >
         <thead>
              <tr>
+                <th>USER ID</th>
                 <th>ID</th>
-                <th>Nombre</th>
-                <th>Email</th>
-                <th>Estado</th>
+                <th>TITLE</th>
+                <th>COMPLETED</th>
             </tr>
         </thead>
+
+        <tbody id="contenidotabla">
+        
+        </tbody>
+      </table>
+    </div>
+
+
 </div>
 
 

@@ -70,18 +70,20 @@ function Foto() {
 function Tabla () {
     let url="https://jsonplaceholder.typicode.com/todos/"
     let contenidotabla=document.getElementById("contenidotabla")
-    let misdatos;
+    let misdatos=""
     fetch (url)
     .then (response=>response.json())
     .then (data=>{
+    
+    console.log (data)  // para ver en consola las columnas del Api, para maquetar la tabla 
 
         data.forEach(element => {
             misdatos += `
             <tr>
+                <td>${element.userId}</td>
                 <td>${element.id}</td>
-                <td>${element.nombre}</td>
-                <td>${element.email}</td>
-                <td>${element.estado ? "Activo" : "Inactivo"}</td>  
+                <td>${element.title}</td>
+                <td>${element.completed}</td>  
             </tr> `    
         });
     
@@ -90,3 +92,4 @@ function Tabla () {
                                           //(si es False cambiar a Inactivo)     
     })
 }
+
