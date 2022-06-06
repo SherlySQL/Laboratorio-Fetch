@@ -77,9 +77,9 @@ function Tabla () {
     
     console.log (data)  // para ver en consola las columnas del Api, para maquetar la tabla 
 
-        data.forEach(element => {
+        data.forEach(element => { //aca pintamos el contenido de la tabla dinamicamente
             misdatos += `
-            <tr>
+            <tr> 
                 <td>${element.userId}</td>
                 <td>${element.id}</td>
                 <td>${element.title}</td>
@@ -87,9 +87,7 @@ function Tabla () {
             </tr> `    
         });
     
-        contenidotabla.innerHTML=misdatos //Meter la info en el HTML
-                                          //? "True" : "Falso" ESTO ES UN IF MODERNO, (si es True cambiar a Activo)
-                                          //(si es False cambiar a Inactivo)     
+        contenidotabla.innerHTML=misdatos //Se le asigna a la variable contenidotabla la info obtenida en el foreach
     })
 }
 
